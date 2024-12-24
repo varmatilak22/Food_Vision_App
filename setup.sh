@@ -7,4 +7,4 @@ pip install numpy
 pip install pandas
 pip install scikit-learn
 pip install pillow
-pip install tensorflow
+pip install tensorflow-cpu
