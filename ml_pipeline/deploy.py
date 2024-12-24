@@ -313,6 +313,7 @@ if sidebar_option == "🎯Prediction":
         st.info("Upload an image to get started.")
 
 elif sidebar_option == "📊Model Architecture":
+    st.title("🧠 Model Architecture")
 
     # Explanation of CNNs and EfficientNet
     st.write("### How Convolutional Neural Networks (CNNs) Work")
