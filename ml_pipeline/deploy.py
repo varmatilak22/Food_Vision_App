@@ -328,7 +328,8 @@ elif sidebar_option == "📊Model Architecture":
     # Visualizing Convolution Operation
     st.write("#### Convolution Operation 🌀")
     kernel = np.array([[1, 0, -1], [1, 0, -1], [1, 0, -1]])  # Simple edge detection filter
-    img = load_image("sample_image.jpeg")  # Provide a sample food image path for convolution visualization
+    path_img=os.path.join(os.path.join(os.path.dirname(os.path.dirname(__file__)),'ml_pipeline'),'sample_image.jpeg')
+    img = load_image(path_img)  # Provide a sample food image path for convolution visualization
     plot_convolution_operation(img, kernel)
 
     # Visualizing Pooling Operation
