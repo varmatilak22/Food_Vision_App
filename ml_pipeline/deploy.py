@@ -313,24 +313,6 @@ if sidebar_option == "🎯Prediction":
         st.info("Upload an image to get started.")
 
 elif sidebar_option == "📊Model Architecture":
-    st.title("🧠 Model Architecture")
-    # Redirect stdout to capture the model summary
-    old_stdout = sys.stdout
-    new_stdout = io.StringIO()
-    sys.stdout = new_stdout
-
-    # Print model summary to the new stdout
-    model.summary()
-
-    # Get the summary as a string
-    model_summary = new_stdout.getvalue()
-
-    # Reset stdout to the original
-    sys.stdout = old_stdout
-
-    # Display the model summary in Streamlit
-    st.write("### Model Summary")
-    st.text(model_summary)
 
     # Explanation of CNNs and EfficientNet
     st.write("### How Convolutional Neural Networks (CNNs) Work")
